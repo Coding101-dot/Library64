@@ -1,15 +1,6 @@
 import sys
 import pygame
-##################################################################################
-# #The game_functions.py file contains a number of functions that carry out      #
-# #the bulk of the work in the game. The check_events() function detects relevant#
-# #events, such as keypresses and releases, and processes each of these          #
-# #types of events through the helper functions check_keydown_events() and       #
-# #A Ship That Fires Bullets 257                                                 #
-# #check_keyup_events(). For now, these functions manage the movement of         #
-# #the ship. The game_functions module also contains update_screen(), which      #
-# #redraws the screen on each pass through the main loop.                        #
-#  ###############################################################################
+
 def check_keydown_events(event, ship):
     if event.key == pygame.K_RIGHT:
         ship.moving_right = True
